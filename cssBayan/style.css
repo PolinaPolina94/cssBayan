@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(224, 222, 163);
+}
+
+img.pic {
+    width: 400px;
+    height: 300px;
+    margin: 20px auto 25px;
+
+    /* opacity: hidden; */
+    /* display: none; */
+}
+
+img.close {
+    width: 25px;
+    height: 25px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radiobox {
+    max-width: 600px;
+margin: auto;
+font-size: 20px;
+font-weight: bold;
+color: #0969DA;
+/* font-family: url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');; */
+}
+
+h1 {
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 460px
+}
+
+.mem {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(181, 176, 176);
+}
+
+.mem input[type=radio] {
+	display: none;
+}
+
+.mem label {
+	cursor: pointer;
+	/* user-select: none; */
+}
+ 
+.mem label:hover {
+	color: #666;
+}
+
+.mem input[type=radio]:checked + img {
+    display: flex;
+    /* margin: 20px auto 25px; */
+}
+
+.mem input[type=radio]:hover + img {
+    display: flex;
+    /* margin: 20px auto 25px; */
+}
+
+
+.radiobox:hover {
+    color: black;
+    transition: 0.1s;
+
+}
