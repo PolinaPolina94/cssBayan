@@ -56,7 +56,9 @@ label {
 h1 {
     height: 2.8rem;
     margin-top: 2.5rem;
-    margin-left: 28.75rem;
+    margin-left: 28.1rem;
+    color: rgb(122, 55, 125);
+    font-size: 3rem;
 }
 
 .mem {
