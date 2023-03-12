@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Warp&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background: rgb(226, 224, 185);
+    font-family: 'Tilt Neon';
 }
 
 img.pic {
-    width: 400px;
+    width: 430px;
     height: 300px;
     margin: 20px auto 25px;
-
-    /* opacity: hidden; */
+    animation: 1s spacing;
     display: none;
 }
 
@@ -19,30 +21,30 @@ img.close {
     width: 25px;
     height: 25px;
     display: none;
+    animation: 2s spacing;
 }
 
 img.add {
     width: 25px;
     height: 25px;
     display: none;
+    animation: 2s spacing;
 }
 
 label {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-
+    flex-wrap: wrap;
 }
 
 .radiobox {
     max-width: 600px;
 margin: auto;
-font-size: 20px;
+font-size: 25px;
 font-weight: bold;
 color: #0969DA;
 cursor: pointer;
-
-/* font-family: url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');; */
 }
 
 .radiobox:hover img.add {
@@ -59,15 +61,13 @@ h1 {
     display: flex;
     flex-direction: column;
     border-top: 1px solid rgb(181, 176, 176);
+    flex-wrap: wrap; 
 }
 
 .mem input[type=radio] {
 	display: none;
 }
 
-/* .mem label {
-	cursor: pointer;
-} */
  
 .mem:hover img{
 	display: flex;
@@ -86,28 +86,20 @@ h1 {
 }
 
 
-.mem input[type=radio]:hover + img {
+.mem:hover + img {
     display: flex;
 }
-
-.mem:active input[type=radio] {
-    display: flex;
-    background-color: rgba(0, 120, 201, 0.7)
-}
-
-/* .mem label input[type=radio]:hover + img {
-    display: flex;
-} */
-
-.mem label input[type=radio]:checked {
-    color: black;
-}
-
-/* .mem input:active {
-    background: #0969DA;
-} */
 
 .radiobox:hover {
     color: black;
     transition: 0.1s;
 }
+
+@keyframes spacing {
+    0% {
+      transform: scale(0.8);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
