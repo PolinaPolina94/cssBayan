@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: rgb(224, 222, 163);
+    background: rgb(226, 224, 185);
 }
 
 img.pic {
@@ -12,12 +12,13 @@ img.pic {
     margin: 20px auto 25px;
 
     /* opacity: hidden; */
-    /* display: none; */
+    display: none;
 }
 
 img.close {
     width: 25px;
     height: 25px;
+    display: none;
 }
 
 label {
@@ -55,23 +56,27 @@ h1 {
 	/* user-select: none; */
 }
  
-.mem label:hover {
-	color: #666;
+.mem:hover img{
+	display: flex;
 }
+/* .mem:checked img{
+	display: flex;
+} */
+
 
 .mem input[type=radio]:checked + img {
     display: flex;
-    /* margin: 20px auto 25px; */
 }
 
 .mem input[type=radio]:hover + img {
     display: flex;
-    /* margin: 20px auto 25px; */
 }
 
+.mem label input[type=radio]:hover + img {
+    display: flex;
+}
 
 .radiobox:hover {
     color: black;
     transition: 0.1s;
-
 }
